@@ -1,12 +1,14 @@
-Certainly! Here's the content organized into a README.md format:
+## Both the task linux as well website task details are included in this readme file.
 
+## Part 1 -- Linux Task
 ```markdown
 # internsctl
 
 ## Custom Linux Command (Version: v0.1.0)
 
 ### Overview
-`internsctl` is a custom Linux command designed to perform various system operations. It provides functionality related to CPU information, memory information, user management, file operations, and more.
+`internsctl` is a custom Linux command designed to perform various system operations.
+It provides functionality related to CPU information, memory information, user management, file operations, and more.
 
 ### Usage
 
@@ -33,20 +35,17 @@ internsctl --version
 ```
 ![Screenshot from 2023-12-28 21-05-45](https://github.com/neerajcode34/Xenon_Stack/assets/109073148/311880e4-c4d9-46ff-804f-449e620ccd4b)
 
-
 - Show usage guidelines:
 ```bash
 internsctl --help
 ```
 ![Screenshot from 2023-12-28 21-08-21](https://github.com/neerajcode34/Xenon_Stack/assets/109073148/46533252-0585-4bee-b7b6-b87511c3c3b1)
 
-
 - Show Command Manual
 ```bash
 internsctl --man
 ```
 ![Screenshot from 2023-12-28 21-06-50](https://github.com/neerajcode34/Xenon_Stack/assets/109073148/3f048e25-fabf-4bcd-b526-29ca3e0e7289)
-
 
 - Get CPU information:
 ```bash
@@ -60,7 +59,6 @@ internsctl memory getinfo
 ```
 ![Screenshot from 2023-12-28 21-10-13](https://github.com/neerajcode34/Xenon_Stack/assets/109073148/2433618e-8269-48c9-b66f-9ec61fb94601)
 
-
 - Create a new user:
 ```bash
 internsctl user create user1
@@ -73,14 +71,13 @@ internsctl user list
 ```
 ![Screenshot from 2023-12-28 21-15-20](https://github.com/neerajcode34/Xenon_Stack/assets/109073148/d6eefc38-5472-4d8a-bc1e-b1b034d92d7f)
 
-
 - List users with sudo permissions:
 ```bash
 internsctl user list --sudo-only
 ```
 ![Screenshot from 2023-12-28 21-16-18](https://github.com/neerajcode34/Xenon_Stack/assets/109073148/00666c82-caee-4794-989d-e290a5460a43)
 
-
+## Part 2 -- website Task
 # Mobile Selling Website
 
 ## Deployed Website Link
@@ -91,18 +88,18 @@ internsctl user list --sudo-only
 - Home Page
 ![Screenshot 2023-12-29 092740](https://github.com/neerajcode34/Xenon_Stack/assets/109073148/b1148ac0-eacf-484e-a254-fec0ab115e5d)
 
-
 - Products Page
-
+![screencapture-neerajcode34-github-io-Xenon-Stack-products-html-2023-12-29-09_32_23](https://github.com/neerajcode34/Xenon_Stack/assets/109073148/463e0b00-e86b-43fa-88e2-be2014692181)
 
 - Contact Page
-![Contact](screenshots/contact.png)
+![Screenshot 2023-12-29 093321](https://github.com/neerajcode34/Xenon_Stack/assets/109073148/94072a63-feea-4197-9699-1894cea9a203)
 
 - Login Page
-![Login](screenshots/login.png)
+![Screenshot 2023-12-29 093517](https://github.com/neerajcode34/Xenon_Stack/assets/109073148/06bbcd24-35b1-429a-a2b6-ef0550c9ddb0)
 
 ### Overview
-This is a simple Mobile Selling Website that allows users to explore and purchase mobile phones. The project includes frontend components (HTML, CSS, JavaScript) and a basic backend implemented with Node.js and MongoDB.
+This is a simple Mobile Selling Website that allows users to explore and purchase mobile phones. 
+The project includes frontend components (HTML, CSS, JavaScript) and a basic backend implemented with Node.js and MongoDB.
 
 ### Technologies Used
 
@@ -151,5 +148,3 @@ Open your browser and navigate to http://localhost:3000 to access the Mobile Sel
 - The database connection is established using the MongoDB Atlas service.
 - Make sure to replace `your_mongodb_atlas_uri` with your actual MongoDB Atlas connection URI.
 ```
-
-Please replace placeholder text such as `/path/to/internsctl`, `your-username`, and `your_mongodb_atlas_uri` with your actual information. Additionally, make sure the image paths in the `![Image](screenshots/image.png)` tags are correct based on your actual file structure.
