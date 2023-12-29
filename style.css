@@ -1,0 +1,163 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header, nav, section, footer {
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+    display: inline;
+    padding: 10px;
+    /* margin-right: 200px; */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Add these styles to set the size of the slider images */
+.slider-image {
+    width: 100%; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Add these styles to make the button big and centered */
+#main-content button {
+    display: block;
+    margin: 20px auto; /* Center the button horizontally with top and bottom margins */
+    padding: 15px 30px; /* Adjust padding to make the button larger */
+    font-size: 18px; /* Adjust font size as needed */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius for a rounded appearance */
+    cursor: pointer;
+}
+
+#main-content button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Add these styles for the product grid */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.product {
+    width: 200px;
+    text-align: center;
+    margin-right: 80px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.price {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.buy-now {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.store-text {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Optionally, set the font weight to bold */
+    margin-bottom: 20px; /* Optionally, add some bottom margin for spacing */
+    color: #333; /* Optionally, set the text color */
+}
+.buy-now:hover {
+    background-color: #45a049;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+
+
+

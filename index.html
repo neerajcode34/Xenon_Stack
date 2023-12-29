@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mobile Selling Website - Home</title>
+    <!-- Add the following styles for the slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Neeraj Mobile</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="main-content">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="sl1.jpg" alt="Slide 1"></div>
+                <div class="swiper-slide"><img src="sl3.jpg" alt="Slide 2"></div>
+                <div class="swiper-slide"><img src="sl2.jpg" alt="Slide 3"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <button onclick="exploreProducts()">Explore Our Products</button>
+    </section>
+
+    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize Swiper
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 2000, // Set the delay to 4000 milliseconds (4 seconds)
+                disableOnInteraction: false, // Allow manual navigation even when autoplay is active
+            },
+        });
+    
+        function exploreProducts() {
+            window.location.href = 'products.html';
+        }
+    </script>
+<br><br>
+<footer>
+    <p>&copy; 2023 Mobile Selling Website By Neeraj ❤️</p>
+</footer>
+</body>
+
+</html>

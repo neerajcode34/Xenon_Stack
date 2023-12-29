@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mobile Selling Website - Contact Us</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Mobile Store</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Neeraj Mobile</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="main-content">
+        <h2>Contact Us</h2>
+        <form action="submit_contact_form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mobile Selling Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        async function submitContactForm() {
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const message = document.getElementById('message').value;
+      
+          try {
+            const response = await fetch('http://localhost:3000/contactus', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({ name, email, message }),
+            });
+      
+            const data = await response.json();
+      
+            if (response.ok) {
+              alert('Message sent successfully'); // You may show a success message to the user
+            } else {
+              alert('Failed to send message: Please try again.');
+            }
+          } catch (error) {
+            console.error(error);
+            alert('An error occurred while trying to send the message.');
+          }
+        }
+      </script>
+</body>
+</html>
